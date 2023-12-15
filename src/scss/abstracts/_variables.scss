@@ -1,0 +1,17 @@
+$color-dark-1: #121212;
+$color-dark-2: #191919;
+$color-dark-3: #252525;
+$color-dark-4: #343434;
+$color-dark-5: #4e4e4e;
+$color-green-1: #345c38;
+$color-yellow-1: #b09133;
+$color-white-1: #ececec;
+
+$box-color: (
+  'green': $color-green-1,
+  'yellow': $color-yellow-1,
+  'grey': $color-dark-3
+);
+
+$font-family: 'Roboto Mono', monospace;
+$box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;

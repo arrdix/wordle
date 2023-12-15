@@ -1,0 +1,8 @@
+@use '../abstracts/variables' as var;
+
+@each $class, $color in var.$box-color {
+  .#{$class} {
+    background-color: $color;
+    border: 1px solid $color;
+  }
+}

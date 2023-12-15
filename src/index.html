@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Worlde</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <h4 class="title">wordle</h4>
+      <i class="refresh-icon fa-solid fa-rotate"></i>
+    </div>
+  </header>
+  <main>
+    <div class="board">
+      <div class="box box-row-1"></div>
+      <div class="box box-row-1"></div>
+      <div class="box box-row-1"></div>
+      <div class="box box-row-1"></div>
+      <div class="box box-row-1"></div>
+      <div class="box box-row-2"></div>
+      <div class="box box-row-2"></div>
+      <div class="box box-row-2"></div>
+      <div class="box box-row-2"></div>
+      <div class="box box-row-2"></div>
+      <div class="box box-row-3"></div>
+      <div class="box box-row-3"></div>
+      <div class="box box-row-3"></div>
+      <div class="box box-row-3"></div>
+      <div class="box box-row-3"></div>
+      <div class="box box-row-4"></div>
+      <div class="box box-row-4"></div>
+      <div class="box box-row-4"></div>
+      <div class="box box-row-4"></div>
+      <div class="box box-row-4"></div>
+      <div class="box box-row-5"></div>
+      <div class="box box-row-5"></div>
+      <div class="box box-row-5"></div>
+      <div class="box box-row-5"></div>
+      <div class="box box-row-5"></div>
+      <div class="box box-row-6"></div>
+      <div class="box box-row-6"></div>
+      <div class="box box-row-6"></div>
+      <div class="box box-row-6"></div>
+      <div class="box box-row-6"></div>
+    </div>
+    <div class="keypads">
+      <div class="row-one">
+        <div class="key" aria-label="Q">Q</div>
+        <div class="key" aria-label="W">W</div>
+        <div class="key" aria-label="E">E</div>
+        <div class="key" aria-label="R">R</div>
+        <div class="key" aria-label="T">T</div>
+        <div class="key" aria-label="Y">Y</div>
+        <div class="key" aria-label="U">U</div>
+        <div class="key" aria-label="I">I</div>
+        <div class="key" aria-label="O">O</div>
+        <div class="key" aria-label="P">P</div>
+      </div>
+      <div class="row-two">
+        <div class="key" aria-label="A">A</div>
+        <div class="key" aria-label="S">S</div>
+        <div class="key" aria-label="D">D</div>
+        <div class="key" aria-label="F">F</div>
+        <div class="key" aria-label="G">G</div>
+        <div class="key" aria-label="H">H</div>
+        <div class="key" aria-label="J">J</div>
+        <div class="key" aria-label="K">K</div>
+        <div class="key" aria-label="L">L</div>
+      </div>
+      <div class="row-three">
+        <div class="key enter" aria-label="Enter">ENTER</div>
+        <div class="key" aria-label="Z">Z</div>
+        <div class="key" aria-label="X">X</div>
+        <div class="key" aria-label="C">C</div>
+        <div class="key" aria-label="V">V</div>
+        <div class="key" aria-label="B">B</div>
+        <div class="key" aria-label="N">N</div>
+        <div class="key" aria-label="M">M</div>
+        <div class="key" aria-label="Backspace"><i class="fa-solid fa-delete-left"></i></div>
+      </div>
+    </div>
+    <div class="objection">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, saepe.</p>
+    </div>
+    <div class="modal-container hide-modal">
+      <div class="info-modal">
+        <div class="info-title">
+          <p class="how-to-play">How to Play</p>
+          <i class="close-icon fa-solid fa-xmark"></i>
+        </div>
+        <div class="info-detail">
+          <div class="instruction">
+            <h4>Rules</h4>
+            <ul>
+              <li>Make sure it's a valid word.<br>(cuz we won't be checking)</li>
+              <li>You only have 6 chances.</li>
+              <li>The color of the boxes will change to show how close your guess was to the word.</li>
+            </ul>
+            <h4>Examples</h4>
+          </div>
+          <div class="board-example">
+            <div class="box-example green">M</div>
+            <div class="box-example">U</div>
+            <div class="box-example">S</div>
+            <div class="box-example">I</div>
+            <div class="box-example">C</div>
+            <p>M is in the word and in the correct spot.</p>
+          </div>
+          <div class="board-example">
+            <div class="box-example">H</div>
+            <div class="box-example">E</div>
+            <div class="box-example">A</div>
+            <div class="box-example yellow">L</div>
+            <div class="box-example">S</div>
+            <p>L is in the word but in the wrong spot.</p>
+          </div>
+          <div class="board-example">
+            <div class="box-example">S</div>
+            <div class="box-example grey">O</div>
+            <div class="box-example">U</div>
+            <div class="box-example">L</div>
+            <div class="box-example">S</div>
+            <p>O is not in the word.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-winning-container hide-modal">
+      <div class="modal-winning">
+        <h4>YOU WIN!</h4>
+        <div class="board-summary-container"></div>
+        <P>The word is:</P>
+        <p class="word"></p>
+        <p class="play-again">Play again?</p>
+        <div class="button-container">
+          <button class="no-button">NOPE</button>
+          <button class="play-button">PLAY!</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-losing-container hide-modal">
+      <div class="modal-losing">
+        <h4>YOU LOSE!</h4>
+        <div class="board-summary-container"></div>
+        <P>The word is:</P>
+        <p class="word"></p>
+        <p class="play-again">Play again?</p>
+        <div class="button-container">
+          <button class="no-button">NOPE</button>
+          <button class="play-button">PLAY!</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <nav class="navbar">
+      <div class="info">
+        <i class="fa-solid fa-lightbulb"></i>
+      </div>
+      <div class="new">
+        <i class="fa-solid fa-plus"></i>
+      </div>
+      <div class="share">
+        <i class="fa-solid fa-paper-plane"></i>
+        <div class="share-dropdown hide-dropdown">
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <div class="fake-bg"></div>
+    </nav>
+  </footer>
+  <script src="./main.js" type="module"></script>
+</body>
+</html>
